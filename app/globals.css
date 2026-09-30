@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;900&family=Great+Vibes&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-purple: #3B2E9E;
+  --brand-deep: #2A1F73;
+  --brand-gold: #E8B84B;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  background: #0A0A0A;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+}
+
+.script {
+  font-family: 'Great Vibes', cursive;
+}
+
+.btn-gold {
+  background: var(--brand-gold);
+  color: #0A0A0A;
+  font-weight: 600;
+  padding: 0.85rem 1.75rem;
+  border-radius: 9999px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: inline-block;
+}
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(232,184,75,0.35);
+}
+
+.btn-outline {
+  border: 1.5px solid #fff;
+  color: #fff;
+  padding: 0.85rem 1.75rem;
+  border-radius: 9999px;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+.btn-outline:hover {
+  background: #fff;
+  color: var(--brand-purple);
+}
