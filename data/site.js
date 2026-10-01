@@ -4,7 +4,7 @@ export const site = {
   tagline: '…No Drinks, No Party!!!',
   subline: 'Premium drinks & event service for every celebration.',
   manager: 'Adekunle Oluwatomisin',
-  phone: '09018515931',
+  phone: '07059937443',
   whatsapp: '2349018515931',
   email: 'adekunletomisin1234@gmail.com',
   instagram: 'delightz_drinks',
