@@ -6,14 +6,14 @@
 
 :root {
   --brand-purple: #3B2E9E;
-  --brand-deep: #1A163B; /* Darker purple for backgrounds */
+  --brand-deep: #2A1F73;
   --brand-gold: #E8B84B;
 }
 
 html, body {
   padding: 0;
   margin: 0;
-  background: #0A0A0A; /* Premium black background */
+  background: var(--brand-deep);
   color: #fff;
   font-family: 'Inter', sans-serif;
   scroll-behavior: smooth;
@@ -51,5 +51,5 @@ h1, h2, h3, h4 {
 }
 .btn-outline:hover {
   background: #fff;
-  color: #0A0A0A;
+  color: var(--brand-deep);
 }

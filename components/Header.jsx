@@ -15,10 +15,10 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-[#0A0A0A]/95 backdrop-blur border-b border-white/10">
+    <header className="sticky top-0 z-50 bg-[#2A1F73]/95 backdrop-blur border-b border-white/10">
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         <Link href="/" aria-label="Delightz home">
-          <Logo variant="full" size={40} />
+          <Logo variant="white" size={40} />
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">
@@ -42,7 +42,7 @@ export default function Header() {
       </div>
 
       {open && (
-        <div className="md:hidden bg-brand-deep border-t border-white/10 px-4 py-4 flex flex-col gap-4">
+        <div className="md:hidden bg-[#2A1F73] border-t border-white/10 px-4 py-4 flex flex-col gap-4">
           {nav.map((n) => (
             <Link key={n.href} href={n.href} onClick={() => setOpen(false)} className="text-white/90">
               {n.label}
