@@ -34,10 +34,14 @@ export default function EventDetail({ params }) {
         <div className="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/60 to-transparent" />
         <div className="absolute bottom-8 left-0 right-0 max-w-6xl mx-auto px-4">
           <p className="text-brand-gold text-sm uppercase tracking-wider mb-2">{ev.type}</p>
-          <h1 className="text-4xl md:text-5xl text-white">{ev.title}</h1>
-          <p className="text-white/70 mt-3">
-            {ev.location} · {new Date(ev.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
-          </p>
+<h1 className="text-4xl md:text-5xl text-white">{ev.title}</h1>
+<div className="flex items-center gap-3 mt-4 text-white/70">
+  <span>{ev.location}</span>
+  <span>·</span>
+  <span>{new Date(ev.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
+  <span>·</span>
+  <span className="bg-white/10 px-3 py-1 rounded-full text-white">{ev.guests}</span>
+</div>
         </div>
       </div>
 

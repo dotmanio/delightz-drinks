@@ -6,14 +6,14 @@
 
 :root {
   --brand-purple: #3B2E9E;
-  --brand-deep: #2A1F73;
+  --brand-deep: #1A163B; /* Darker purple for backgrounds */
   --brand-gold: #E8B84B;
 }
 
 html, body {
   padding: 0;
   margin: 0;
-  background: #0A0A0A;
+  background: #0A0A0A; /* Premium black background */
   color: #fff;
   font-family: 'Inter', sans-serif;
   scroll-behavior: smooth;
@@ -42,7 +42,7 @@ h1, h2, h3, h4 {
 }
 
 .btn-outline {
-  border: 1.5px solid #fff;
+  border: 1.5px solid rgba(255,255,255,0.3);
   color: #fff;
   padding: 0.85rem 1.75rem;
   border-radius: 9999px;
@@ -51,5 +51,5 @@ h1, h2, h3, h4 {
 }
 .btn-outline:hover {
   background: #fff;
-  color: var(--brand-purple);
+  color: #0A0A0A;
 }
