@@ -27,21 +27,21 @@ export default function EventDetail({ params }) {
   }
 
   return (
-    <article className="bg-brand-black min-h-screen pb-20">
+    <article className="bg-[#0A0A0A] min-h-screen pb-20">
       {/* HERO */}
       <div className="relative h-[50vh] min-h-[320px]">
         <Image src={ev.cover} alt={ev.title} fill className="object-cover" priority sizes="100vw" />
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-[#0A0A0A]/60 to-transparent" />
         <div className="absolute bottom-8 left-0 right-0 max-w-6xl mx-auto px-4">
           <p className="text-brand-gold text-sm uppercase tracking-wider mb-2">{ev.type}</p>
-<h1 className="text-4xl md:text-5xl text-white">{ev.title}</h1>
-<div className="flex items-center gap-3 mt-4 text-white/70">
-  <span>{ev.location}</span>
-  <span>·</span>
-  <span>{new Date(ev.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
-  <span>·</span>
-  <span className="bg-white/10 px-3 py-1 rounded-full text-white">{ev.guests}</span>
-</div>
+          <h1 className="text-4xl md:text-5xl text-white">{ev.title}</h1>
+          <div className="flex items-center gap-3 mt-4 text-white/70">
+            <span>{ev.location}</span>
+            <span>·</span>
+            <span>{new Date(ev.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
+            <span>·</span>
+            <span className="bg-white/10 px-3 py-1 rounded-full text-white">{ev.guests}</span>
+          </div>
         </div>
       </div>
 
@@ -63,7 +63,7 @@ export default function EventDetail({ params }) {
                 src={src}
                 alt={`${ev.title} photo ${i + 1}`}
                 fill
-                className="object-cover group-hover:scale-105 transition"
+                className="object-cover group-hover:scale-105 transition duration-500"
                 sizes="(max-width: 768px) 50vw, 33vw"
               />
             </a>
@@ -84,7 +84,7 @@ export default function EventDetail({ params }) {
         <h2 className="text-2xl text-brand-gold mb-6">What They Said</h2>
         <div className="grid md:grid-cols-2 gap-6 mb-12">
           {ev.feedback.map((fb, i) => (
-            <blockquote key={i} className="p-6 rounded-2xl bg-white/5 border border-white/10">
+            <blockquote key={i} className="p-6 rounded-2xl bg-[#111] border border-white/10">
               <p className="text-white/90 italic mb-4">"{fb.quote}"</p>
               <footer className="text-sm">
                 <span className="text-brand-gold font-semibold">{fb.name}</span>
@@ -95,7 +95,7 @@ export default function EventDetail({ params }) {
         </div>
 
         {/* CTA */}
-        <div className="text-center p-10 rounded-2xl bg-gradient-to-br from-brand-purple to-brand-deep">
+        <div className="text-center p-10 rounded-2xl bg-gradient-to-br from-brand-purple/20 to-[#111] border border-white/10">
           <h3 className="text-2xl text-white mb-4">Want something like this?</h3>
           <a
             href={whatsappLink(`Hi Delightz, I saw the ${ev.title} event on your site and I'd like something similar.`)}
