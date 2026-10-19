@@ -1,49 +1,71 @@
+import Link from 'next/link';
 import Logo from './Logo';
 import { site, whatsappLink } from '../data/site';
 
+const links = [
+  { href: '/', label: 'Home' },
+  { href: '/events', label: 'Events' },
+  { href: '/services', label: 'Services' },
+  { href: '/contact', label: 'Contact' }
+];
+
 export default function Footer() {
   return (
-    <footer className="bg-brand-deep border-t border-white/10 mt-20">
-      <div className="max-w-6xl mx-auto px-4 py-12 grid gap-10 md:grid-cols-3">
-        <div>
+    <footer className="bg-brand-night border-t border-white/10">
+      <div className="max-w-6xl mx-auto px-4 py-16 grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="lg:pr-6">
           <Logo variant="white" size={44} />
-          <p className="script text-brand-gold text-2xl mt-4">{site.tagline}</p>
+          <p className="script text-brand-gold text-3xl mt-5">{site.tagline}</p>
+          <p className="text-white/65 text-sm mt-4 leading-relaxed">
+            Premium event drinks catering across Lagos and Nigeria.
+          </p>
         </div>
 
         <div>
-          <h4 className="text-brand-gold font-semibold mb-4">Contact</h4>
-          <ul className="space-y-2 text-white/80 text-sm">
-            <li>Manager: {site.manager}</li>
+          <h4 className="text-white text-lg mb-5">Explore</h4>
+          <ul className="space-y-3 text-white/75 text-sm">
+            {links.map((l) => (
+              <li key={l.href}>
+                <Link href={l.href} className="hover:text-brand-gold transition">{l.label}</Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="text-white text-lg mb-5">Contact</h4>
+          <ul className="space-y-3 text-white/75 text-sm">
+            <li>{site.manager}, Manager</li>
             <li>
-              Phone: <a href={`tel:${site.phone}`} className="hover:text-brand-gold">{site.phone}</a>
+              <a href={`tel:${site.phone}`} className="hover:text-brand-gold transition">{site.phone}</a>
             </li>
             <li>
-              WhatsApp: <a href={whatsappLink()} target="_blank" rel="noreferrer" className="hover:text-brand-gold">Chat now</a>
+              <a href={whatsappLink()} target="_blank" rel="noreferrer" className="hover:text-brand-gold transition">Chat on WhatsApp</a>
             </li>
             <li>
-              Email: <a href={`mailto:${site.email}`} className="hover:text-brand-gold break-all">{site.email}</a>
+              <a href={`mailto:${site.email}`} className="hover:text-brand-gold transition break-all">{site.email}</a>
             </li>
           </ul>
         </div>
 
         <div>
-          <h4 className="text-brand-gold font-semibold mb-4">Follow</h4>
-          <ul className="space-y-2 text-white/80 text-sm">
+          <h4 className="text-white text-lg mb-5">Follow us</h4>
+          <ul className="space-y-3 text-white/75 text-sm">
             <li>
-              <a href={`https://instagram.com/${site.instagram}`} target="_blank" rel="noreferrer" className="hover:text-brand-gold">
-                Instagram · @{site.instagram}
+              <a href={`https://instagram.com/${site.instagram}`} target="_blank" rel="noreferrer" className="hover:text-brand-gold transition">
+                Instagram @{site.instagram}
               </a>
             </li>
             <li>
-              <a href={`https://tiktok.com/@${site.tiktok}`} target="_blank" rel="noreferrer" className="hover:text-brand-gold">
-                TikTok · @{site.tiktok}
+              <a href={`https://tiktok.com/@${site.tiktok}`} target="_blank" rel="noreferrer" className="hover:text-brand-gold transition">
+                TikTok @{site.tiktok}
               </a>
             </li>
           </ul>
         </div>
       </div>
 
-      <div className="border-t border-white/10 py-5 text-center text-white/50 text-xs">
+      <div className="border-t border-white/10 py-6 text-center text-white/50 text-xs">
         © {new Date().getFullYear()} Delightz Drinks And Events. All rights reserved.
       </div>
     </footer>

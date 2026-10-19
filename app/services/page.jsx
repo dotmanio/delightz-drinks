@@ -7,40 +7,49 @@ export const metadata = {
 
 export default function ServicesPage() {
   return (
-    <section className="py-24 px-4 bg-[#3B2E9E] min-h-screen">
-      <div className="max-w-5xl mx-auto">
-        <div className="text-center mb-16">
-          <p className="text-brand-gold text-sm tracking-[0.2em] uppercase mb-4 font-semibold">What We Do</p>
-          <h1 className="text-4xl md:text-5xl text-white mb-4">Our Services</h1>
-          <p className="text-white/80">Everything you need for a fully stocked, smoothly run event bar.</p>
+    <>
+      <section className="section-purple relative overflow-hidden px-4 pt-24 pb-20">
+        <div className="absolute inset-0 hero-fade" aria-hidden="true" />
+        <div className="relative max-w-5xl mx-auto">
+          <h1 className="section-title text-white max-w-2xl">A fully stocked bar, run properly from start to finish</h1>
+          <span className="gold-rule mt-6" />
+          <p className="section-lead mt-6">
+            Drinks, people and setup, handled by one team, so your only job on the day is to host.
+          </p>
         </div>
+      </section>
 
-        <div className="grid md:grid-cols-3 gap-6 mb-16">
+      <section className="section-deep px-4 py-20 min-h-[60vh]">
+        <div className="max-w-5xl mx-auto">
           {services.map((s) => (
-            <div key={s.title} className="p-8 rounded-2xl bg-white/5 border border-white/10 flex flex-col hover:border-brand-gold/50 transition duration-300">
-              <div className="text-5xl mb-5">{s.icon}</div>
-              <h3 className="text-xl text-white font-serif mb-3">{s.title}</h3>
-              <p className="text-white/70 text-sm mb-8 flex-1">{s.desc}</p>
+            <div
+              key={s.title}
+              className="grid md:grid-cols-[1fr_2fr_auto] gap-6 md:gap-10 items-start md:items-center py-10 border-t border-white/15 last:border-b"
+            >
+              <h2 className="text-2xl md:text-3xl text-white">{s.title}</h2>
+              <p className="text-white/75 leading-relaxed max-w-xl">{s.desc}</p>
               <a
                 href={whatsappLink(`Hi Delightz, I'd like to book: ${s.title}`)}
                 target="_blank"
                 rel="noreferrer"
-                className="btn-gold text-sm text-center"
+                className="btn-outline text-sm"
               >
-                Book this
+                Book this service
               </a>
             </div>
           ))}
-        </div>
 
-        <div className="text-center p-12 rounded-3xl bg-[#2A1F73] border border-white/10">
-          <h3 className="text-3xl text-white mb-4 font-serif">Need a custom package?</h3>
-          <p className="text-white/70 mb-8 max-w-lg mx-auto">Tell us your event date and guest count, and we'll put together a package that fits your budget.</p>
-          <a href={whatsappLink()} target="_blank" rel="noreferrer" className="btn-gold">
-            Chat with Us
-          </a>
+          <div className="mt-20 panel-featured p-10 md:p-14 text-center">
+            <h2 className="text-3xl text-white mb-4">Need a custom package?</h2>
+            <p className="text-white/75 mb-8 max-w-lg mx-auto leading-relaxed">
+              Tell us your event date and guest count, and we&apos;ll put together a package that fits your budget.
+            </p>
+            <a href={whatsappLink()} target="_blank" rel="noreferrer" className="btn-gold">
+              Chat with us
+            </a>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }

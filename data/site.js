@@ -1,8 +1,9 @@
 export const site = {
   name: 'Delightz Drinks And Events',
   shortName: 'Delightz',
-  tagline: '…No Drinks, No Party!!!',
-  headline: 'We handle the drinks, you enjoy the party!!',
+  url: 'https://delightz-drinks.vercel.app',
+  tagline: '…No Drinks, No Party.',
+  headline: 'We handle the drinks. You enjoy the party.',
   subline: 'Premium drinks, professional servers, and full bar setup for events across Lagos and Nigeria.',
   manager: 'Adekunle Oluwatomisin',
   phone: '07059937443',
@@ -84,36 +85,36 @@ export const events = [
 
 export const pricing = [
   {
-    tier: '50 - 100 Guests',
+    tier: '50–100 Guests',
     total: '₦220,000',
     breakdown: [
-      { item: 'Transportation', price: '80k' },
-      { item: 'Boys (3-4)', price: '40k' },
-      { item: 'Ice blocks / cubes', price: '40k' },
-      { item: 'Chest / ice cooler', price: '30k' },
-      { item: 'Service charge', price: '30k' }
+      { item: 'Transportation', price: '₦80,000' },
+      { item: 'Bartenders & servers (3–4)', price: '₦40,000' },
+      { item: 'Ice blocks / cubes', price: '₦40,000' },
+      { item: 'Chest / ice cooler', price: '₦30,000' },
+      { item: 'Service charge', price: '₦30,000' }
     ]
   },
   {
-    tier: '100 - 200 Guests',
+    tier: '100–200 Guests',
     total: '₦310,000',
     breakdown: [
-      { item: 'Transportation', price: '90k' },
-      { item: 'Boys (5-6)', price: '60k' },
-      { item: 'Ice blocks / cubes', price: '60k' },
-      { item: 'Chest / ice cooler', price: '50k' },
-      { item: 'Service charge', price: '50k' }
+      { item: 'Transportation', price: '₦90,000' },
+      { item: 'Bartenders & servers (5–6)', price: '₦60,000' },
+      { item: 'Ice blocks / cubes', price: '₦60,000' },
+      { item: 'Chest / ice cooler', price: '₦50,000' },
+      { item: 'Service charge', price: '₦50,000' }
     ]
   },
   {
-    tier: '200 - 500 Guests',
+    tier: '200–500 Guests',
     total: '₦450,000',
     breakdown: [
-      { item: 'Transportation', price: '120k' },
-      { item: 'Boys (8-10)', price: '100k' },
-      { item: 'Ice blocks / cubes', price: '80k' },
-      { item: 'Chest / ice cooler', price: '70k' },
-      { item: 'Service charge', price: '80k' }
+      { item: 'Transportation', price: '₦120,000' },
+      { item: 'Bartenders & servers (8–10)', price: '₦100,000' },
+      { item: 'Ice blocks / cubes', price: '₦80,000' },
+      { item: 'Chest / ice cooler', price: '₦70,000' },
+      { item: 'Service charge', price: '₦80,000' }
     ]
   }
 ];
