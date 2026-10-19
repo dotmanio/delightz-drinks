@@ -117,3 +117,21 @@ export const pricing = [
     ]
   }
 ];
+
+export const services = [
+  {
+    title: 'Drinks Supply',
+    desc: 'Beers, spirits, wine, soft drinks, mixers and ice — sourced and delivered to your venue.',
+    icon: '🍾'
+  },
+  {
+    title: 'Servers & Bartenders',
+    desc: 'Professional, uniformed, event-trained servers who keep glasses full and guests happy.',
+    icon: '🥂'
+  },
+  {
+    title: 'Setup & Delivery',
+    desc: 'We deliver, set up the bar, run it, and clean up. You just enjoy your event.',
+    icon: '🎉'
+  }
+];
