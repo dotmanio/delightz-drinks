@@ -15,7 +15,7 @@ export default function EventsPage() {
         <div className="text-center mb-16">
           <p className="text-brand-gold text-sm tracking-[0.2em] uppercase mb-4 font-semibold">Gallery</p>
           <h1 className="text-4xl md:text-5xl text-white mb-3">Our Events</h1>
-          <p className="text-white/60">A look at celebrations we've served.</p>
+          <p className="text-white/60">A look at celebrations we have served.</p>
         </div>
 
         {/* Sliding panel — horizontal scroll on mobile, grid on desktop */}
