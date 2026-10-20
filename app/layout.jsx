@@ -2,6 +2,7 @@ import './globals.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import WhatsAppFloat from '../components/WhatsAppFloat';
+import IntroSplash from '../components/IntroSplash';
 import { site } from '../data/site';
 
 export const metadata = {
@@ -53,6 +54,7 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c') }}
         />
+        <IntroSplash />
         <Header />
         <main>{children}</main>
         <Footer />
