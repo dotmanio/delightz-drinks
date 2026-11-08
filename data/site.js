@@ -22,6 +22,24 @@ export const whatsappLink = (message = "Hi Delightz, I'd like to book drinks for
 
 export const events = [
   {
+    slug: 'tdchapter26',
+    title: 'TDchapter26',
+    date: '2026-10-31',
+    location: 'Alimosho, Lagos',
+    type: 'Wedding',
+    guests: '350+ Guests',
+    summary: 'A wedding celebration in Alimosho, Lagos, with drinks and bar service for over 350 guests.',
+    cover: '/events/tdchapter26/01.jpg',
+    gallery: [
+      '/events/tdchapter26/01.jpg', '/events/tdchapter26/02.jpg',
+      '/events/tdchapter26/03.jpg', '/events/tdchapter26/04.jpg',
+      '/events/tdchapter26/05.jpg', '/events/tdchapter26/06.jpg',
+      '/events/tdchapter26/07.jpg', '/events/tdchapter26/08.jpg'
+    ],
+    video: null,
+    feedback: []
+  },
+  {
     slug: 'capo-ileya',
     title: 'Capo Ileya',
     date: '2024-06-16',
@@ -86,35 +104,35 @@ export const events = [
 export const pricing = [
   {
     tier: '50–100 Guests',
-    total: '₦220,000',
+    total: '₦250,000',
     breakdown: [
       { item: 'Transportation', price: '₦80,000' },
       { item: 'Bartenders & servers (3–4)', price: '₦40,000' },
       { item: 'Ice blocks / cubes', price: '₦40,000' },
-      { item: 'Chest / ice cooler', price: '₦30,000' },
-      { item: 'Service charge', price: '₦30,000' }
-    ]
-  },
-  {
-    tier: '100–200 Guests',
-    total: '₦310,000',
-    breakdown: [
-      { item: 'Transportation', price: '₦90,000' },
-      { item: 'Bartenders & servers (5–6)', price: '₦60,000' },
-      { item: 'Ice blocks / cubes', price: '₦60,000' },
-      { item: 'Chest / ice cooler', price: '₦50,000' },
+      { item: 'Chest / ice cooler', price: '₦40,000' },
       { item: 'Service charge', price: '₦50,000' }
     ]
   },
   {
-    tier: '200–500 Guests',
-    total: '₦450,000',
+    tier: '100–200 Guests',
+    total: '₦350,000',
     breakdown: [
-      { item: 'Transportation', price: '₦120,000' },
+      { item: 'Transportation', price: '₦100,000' },
+      { item: 'Bartenders & servers (5–6)', price: '₦60,000' },
+      { item: 'Ice blocks / cubes', price: '₦60,000' },
+      { item: 'Chest / ice cooler', price: '₦50,000' },
+      { item: 'Service charge', price: '₦80,000' }
+    ]
+  },
+  {
+    tier: '200–500 Guests',
+    total: '₦550,000',
+    breakdown: [
+      { item: 'Transportation', price: '₦150,000' },
       { item: 'Bartenders & servers (8–10)', price: '₦100,000' },
       { item: 'Ice blocks / cubes', price: '₦80,000' },
       { item: 'Chest / ice cooler', price: '₦70,000' },
-      { item: 'Service charge', price: '₦80,000' }
+      { item: 'Service charge', price: '₦150,000' }
     ]
   }
 ];
