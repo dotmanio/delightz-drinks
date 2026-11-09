@@ -1,7 +1,7 @@
 export const site = {
   name: 'Delightz Drinks And Events',
   shortName: 'Delightz',
-  url: 'https://delightz-drinks.vercel.app',
+  url: 'https://delightz-drinks.com',
   tagline: '…No Drinks, No Party.',
   headline: 'We handle the drinks. You enjoy the party.',
   subline: 'Premium drinks, professional servers, and full bar setup for events across Lagos and Nigeria.',
